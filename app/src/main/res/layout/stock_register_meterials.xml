@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center"
+            android:minHeight="20dp"
+            android:paddingRight="10dp"
+            android:text="Date: 28/03/2018"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_shap"
+            android:gravity="center"
+            android:minHeight="20dp"
+            android:text="Ambulance Register Details"
+            android:textColor="#fff"
+            android:textSize="12dp" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            card_view:cardCornerRadius="3dp"
+            card_view:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:minHeight="25dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:layout_weight=".4"
+                        android:gravity="start|center"
+                        android:text="Ambulance Reg. No."
+                        android:textColor="@color/cardview_dark_background" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:layout_weight=".05"
+                        android:gravity="center"
+                        android:text=":"
+                        android:textColor="@color/cardview_dark_background" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:layout_weight=".55"
+                        android:gravity="start|center"
+                        android:paddingLeft="10dp"
+                        android:text="AMB001"
+                        android:textColor="@color/cardview_dark_background" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:minHeight="25dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:layout_weight=".4"
+                        android:gravity="start|center"
+                        android:text="Dist"
+                        android:textColor="@color/cardview_dark_background" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:layout_weight=".05"
+                        android:gravity="center"
+                        android:text=":"
+                        android:textColor="@color/cardview_dark_background" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:layout_weight=".55"
+                        android:gravity="start|center"
+                        android:paddingLeft="10dp"
+                        android:text="Bangalore"
+                        android:textColor="@color/cardview_dark_background" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:minHeight="25dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:layout_weight=".4"
+                        android:gravity="start|center"
+                        android:text="City"
+                        android:textColor="@color/cardview_dark_background" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:layout_weight=".05"
+                        android:gravity="center"
+                        android:text=":"
+                        android:textColor="@color/cardview_dark_background" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:layout_weight=".55"
+                        android:gravity="start|center"
+                        android:paddingLeft="10dp"
+                        android:text="Bangalore"
+                        android:textColor="@color/cardview_dark_background" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:minHeight="25dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:layout_weight=".4"
+                        android:gravity="start|center"
+                        android:text="Base Location"
+                        android:textColor="@color/cardview_dark_background" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:layout_weight=".05"
+                        android:gravity="center"
+                        android:text=":"
+                        android:textColor="@color/cardview_dark_background" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:layout_weight=".55"
+                        android:gravity="start|center"
+                        android:paddingLeft="10dp"
+                        android:text="Koramnagala"
+                        android:textColor="@color/cardview_dark_background" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/stock_change"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_shap"
+            android:gravity="center"
+            android:minHeight="30dp"
+            android:text="MEDICAL CONSUMABLES"
+            android:textColor="#fff"
+            android:textSize="15dp" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            card_view:cardCornerRadius="2dp"
+            card_view:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+
+                <!--Product Search-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/spinner_design"
+                    android:minHeight="40dp"
+                    android:orientation="vertical">
+
+                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                        android:id="@+id/stock_search"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/spinner_search"
+                        android:background="@color/colorPrimary"></LinearLayout>
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fillViewport="false"
+                        android:orientation="vertical"
+                        android:padding="1dp">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rvContacts"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"></android.support.v7.widget.RecyclerView>
+                    </ScrollView>
+                </LinearLayout>
+                <!--EndProduct Search-->
+
+                <!--        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#fff"
+                            android:minHeight="25dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="20dp"
+                                android:layout_weight=".4"
+                                android:gravity="start|center"
+                                android:text="Material ID"
+                                android:textColor="@color/cardview_dark_background"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".05"
+                                android:gravity="center"
+                                android:text=":"
+                                android:textColor="@color/cardview_dark_background"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".55"
+                                android:gravity="start|center"
+                                android:paddingLeft="10dp"
+                                android:text="M10005"
+                                android:textColor="@color/cardview_dark_background"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#fff"
+                            android:minHeight="25dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".4"
+                                android:gravity="start|center"
+                                android:text="Material Description"
+                                android:textColor="@color/cardview_dark_background"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".05"
+                                android:gravity="center"
+                                android:text=":"
+                                android:textColor="@color/cardview_dark_background"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".55"
+                                android:gravity="start|center"
+                                android:paddingLeft="10dp"
+                                android:text="IV Ringer Lactate 500ml"
+                                android:textColor="@color/cardview_dark_background"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="5dp"
+                            android:background="@drawable/boarder_design">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:minHeight="30dp">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".5"
+                                    android:orientation="horizontal"
+                                    android:paddingRight="2dp">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".7"
+                                        android:gravity="start|center"
+                                        android:text="Opening Balance Qty"
+                                        android:textColor="@color/cardview_dark_background"
+                                        android:textSize="12sp" />
+
+                                    <EditText
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:gravity="center"
+                                        android:text="20"
+                                        android:hint="45"
+                                        android:background="@null"
+                                        android:textColor="#fff"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".5"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".5"
+                                        android:gravity="start|center"
+                                        android:text="Opening Date"
+                                        android:textColor="@color/cardview_dark_background"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".5"
+                                        android:gravity="center"
+                                        android:text="28/03/2018"
+                                        android:textColor="@color/cardview_dark_background"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:minHeight="25dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".5"
+                                    android:orientation="horizontal"
+                                    android:paddingRight="2dp">
+
+                                    <TextView
+                                        android:id="@+id/textView5"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="20dp"
+                                        android:gravity="start|center"
+                                        android:text="Received Qtuantity Details"
+                                        android:textColor="@color/cardview_dark_background"
+                                        android:textSize="12sp"
+                                        />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".5"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="20dp"
+                                        android:layout_weight=".5"
+                                        android:gravity="start|center"
+                                        android:text="Received Date"
+                                        android:textColor="@color/cardview_dark_background"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="20dp"
+                                        android:layout_weight=".5"
+                                        android:gravity="center"
+                                        android:text="28103/2018"
+                                        android:textColor="@color/cardview_dark_background"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:minHeight="30dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".5"
+                                    android:orientation="horizontal"
+                                    android:paddingRight="2dp">
+
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".7"
+                                        android:gravity="center|left"
+                                        android:text="Good Qty:"
+                                        android:textColor="@color/cardview_dark_background"
+                                        android:textSize="12sp" />
+
+                                    <EditText
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:gravity="center"
+                                        android:text="20"
+                                        android:hint="45"
+                                        android:background="@null"
+                                        android:textColor="#fff"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".5"
+                                    android:orientation="horizontal"
+                                    android:paddingRight="2dp">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".7"
+                                        android:gravity="center|start"
+                                        android:text="Damaged Qty :"
+                                        android:textColor="@color/cardview_dark_background"
+                                        android:textSize="12sp" />
+
+                                    <EditText
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:gravity="center"
+                                        android:text="20"
+                                        android:hint="45"
+                                        android:background="@null"
+                                        android:textColor="#fff"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:minHeight="30dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".5"
+
+                                    android:orientation="horizontal"
+                                    android:paddingRight="2dp">
+
+                                    <TextView
+                                        android:id="@+id/textView4"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".7"
+                                        android:gravity="start|center"
+                                        android:text="Total Aval Qty"
+                                        android:textColor="@color/cardview_dark_background"
+                                        android:textSize="12sp" />
+
+                                    <EditText
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:gravity="center"
+                                        android:text="20"
+                                        android:hint="45"
+                                        android:background="@null"
+                                        android:textColor="#fff"
+                                        android:textSize="12sp" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".5"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/textView6"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".7"
+                                        android:gravity="start|center"
+                                        android:text="Total Consumed Qty"
+                                        android:textColor="@color/cardview_dark_background"
+                                        android:textSize="12sp" />
+
+                                    <EditText
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:gravity="center"
+                                        android:text="20"
+                                        android:hint="45"
+                                        android:background="@null"
+                                        android:textColor="#fff"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:minHeight="30dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".5"
+                                    android:orientation="horizontal"
+                                    android:paddingRight="2dp">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".7"
+                                        android:gravity="start|center"
+                                        android:text="Closing Balance Qty"
+                                        android:textColor="@color/cardview_dark_background"
+                                        android:textSize="12sp" />
+
+                                    <EditText
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:gravity="center"
+                                        android:text="20"
+                                        android:hint="45"
+                                        android:background="@null"
+                                        android:textColor="#fff"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".5"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".5"
+                                        android:gravity="start|center"
+                                        android:text="Closing Date"
+                                        android:textColor="@color/cardview_dark_background"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".5"
+                                        android:gravity="center"
+                                        android:text="28103/2018"
+                                        android:textColor="@color/cardview_dark_background"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+        -->
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,349 @@
+<resources>
+    <string name="app_name">Smart_Ambulance</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string-array name="equipment_list">
+        <item>Select equipment</item>
+        <item>Camera with 1 GB Card</item>
+        <item>Stupum Cup</item>
+        <item>Oropharyngeal Air Way 0,1,2,3,4</item>
+        <item>Nasopharyngle Air Way (5,6,7,7.5,8)</item>
+        <item>Mouth to Mouth Mask</item>
+        <item>Spine Board</item>
+        <item>Spacer</item>
+        <item>Tourniquets</item>
+        <item>Scoop Stretche</item>
+        <item>Scissor big</item>
+        <item>Scissor Small</item>
+        <item>Collapsible Stretcher</item>
+        <item>Scaplel</item>
+        <item>Splint Long Leg, Short Leg</item>
+        <item>Spling Short Arm, Long Arm</item>
+        <item>Forces-Straight (Toothed)</item>
+        <item>Kidney Tray</item>
+        <item>Aftery Forceps 6"</item>
+        <item> Dorso Lumber Brach</item>
+        <item>Laryngoscope (Adult)</item>
+        <item>1 Laryngoscope (Child)</item>
+        <item>Pulse Oxymeter</item>
+        <item>Glucometer</item>
+        <item>Digital Thermometer</item>
+        <item>Manual BP Instrument</item>
+        <item>Digital BP Instrument</item>
+        <item>Flow Meter</item>
+        <item>Protable Oxygen Cylinder</item>
+        <item>B V M Adult</item>
+        <item>B V M Pediatric</item>
+        <item>Needle Syringe Destroyer</item>
+        <item>Nebulizer</item>
+        <item>Pupillary Tourch</item>
+        <item>Mobile Phone</item>
+        <item>Charger Mobile</item>
+        <item>Emergency Light</item>
+        <item>All Out Machine</item>
+        <item>Rain Coat</item>
+        <item>C Collar</item>
+        <item>Jackets</item>
+        <item>Water Thermous</item>
+        <item>Ventilator</item>
+        <item>Defibrilator</item>
+        <item>Bucket</item>
+        <item>Mug</item>
+        <item>Suction Machine</item>
+        <item>Fire Blanket</item>
+        <item>ECG</item>
+        <item>Inverter charging cable</item>
+        <item>AED Pads (Adult Only)</item>
+        <item>Rubber Wiper</item>
+        <item>Wheel Chair</item>
+        <item>Fire Extingusher</item>
+        <item>Folding Stretcher</item>
+
+    </string-array>
+    <string-array name="new_equipment_list">
+
+        <item>Camera with 1 GB Card</item>
+        <item>Stupum Cup</item>
+        <item>Oropharyngeal Air Way 0,1,2,3,4</item>
+        <item>Nasopharyngle Air Way (5,6,7,7.5,8)</item>
+        <item>Mouth to Mouth Mask</item>
+        <item>Spine Board</item>
+        <item>Spacer</item>
+        <item>Tourniquets</item>
+        <item>Scoop Stretche</item>
+        <item>Scissor big</item>
+        <item>Scissor Small</item>
+        <item>Collapsible Stretcher</item>
+        <item>Scaplel</item>
+        <item>Splint Long Leg, Short Leg</item>
+        <item>Spling Short Arm, Long Arm</item>
+        <item>Forces-Straight (Toothed)</item>
+        <item>Kidney Tray</item>
+        <item>Aftery Forceps 6"</item>
+        <item> Dorso Lumber Brach</item>
+        <item>Laryngoscope (Adult)</item>
+        <item>1 Laryngoscope (Child)</item>
+        <item>Pulse Oxymeter</item>
+        <item>Glucometer</item>
+        <item>Digital Thermometer</item>
+        <item>Manual BP Instrument</item>
+        <item>Digital BP Instrument</item>
+        <item>Flow Meter</item>
+        <item>Protable Oxygen Cylinder</item>
+        <item>B V M Adult</item>
+        <item>B V M Pediatric</item>
+        <item>Needle Syringe Destroyer</item>
+        <item>Nebulizer</item>
+        <item>Pupillary Tourch</item>
+        <item>Mobile Phone</item>
+        <item>Charger Mobile</item>
+        <item>Emergency Light</item>
+        <item>All Out Machine</item>
+        <item>Rain Coat</item>
+        <item>C Collar</item>
+        <item>Jackets</item>
+        <item>Water Thermous</item>
+        <item>Ventilator</item>
+        <item>Defibrilator</item>
+        <item>Bucket</item>
+        <item>Mug</item>
+        <item>Suction Machine</item>
+        <item>Fire Blanket</item>
+        <item>ECG</item>
+        <item>Inverter charging cable</item>
+        <item>AED Pads (Adult Only)</item>
+        <item>Rubber Wiper</item>
+        <item>Wheel Chair</item>
+        <item>Fire Extingusher</item>
+        <item>Folding Stretcher</item>
+
+    </string-array>
+    <string-array name="medical_search_list">
+
+        <item>IV Ringer Lactate 500ml</item>
+        <item>IV Normal Saline 500ml</item>
+        <item>Spirit Solution</item>
+        <item>Inj Adrenaline 1ml Amp</item>
+        <item>inj Atropine 1ml Amp</item>
+        <item>Budesonide Respule</item>
+        <item>Inj Medazolam</item>
+        <item>Tab Paracetamol</item>
+        <item>Inj Diclofenac Sodium Amp</item>
+        <item>Distilled water 5ml Amp</item>
+        <item>Duolin Respule</item>
+        <item>Inj Hydrocortisone 2ml Amp</item>
+        <item>Inj Lasix Amp</item>
+        <item>Inj Oxytocin Amp</item>
+        <item>Inj Avil</item>
+        <item>Inj Paracetamol Amp</item>
+        <item>Inj Ranitidine Amp</item>
+        <item>Astlin Respule</item>
+        <item>InjTramadol Amp</item>
+        <item>Inj Theopyllin plus</item>
+        <item>Inj Magnesium Sulpate</item>
+        <item>IV Dextrose 25% 100ml</item>
+        <item>Povidone/Iodine Solu. 500ml</item>
+        <item>Xylocaine Gel 2% 30gm</item>
+        <item>ORS Sachets</item>
+        <item>Glucose Powder</item>
+        <item>Inj Ondansetron</item>
+        <item>Inj Buscopam</item>
+        <item>Mucaine 250ml Syrups</item>
+        <item>Paracetamol 60ml Syrup</item>
+        <item>Isosorbide Dinitrate Tab</item>
+        <item>Inj Anti Snake Venom</item>
+        <item>Hydrogen Peroxide Solution</item>
+        <item>Tab Disprin</item>
+
+    </string-array>
+    <string-array name="disposable_search_list">
+        <item>Micropore Tape 2"</item>
+        <item>Disposable Syringe 3cc</item>
+        <item>Disposable Syringe 5cc</item>
+        <item>Gluco Strip(Accu/Sure)</item>
+        <item>IV Drip Set</item>
+        <item>Intracath Cannula 20</item>
+        <item>Intracath Cannula 22</item>
+        <item>Intracath Cannula 24</item>
+        <item>Mackintosh(Rubber Sheet)</item>
+        <item>Cotton 500gms</item>
+        <item>Disposable Gloves (In Pair)</item>
+        <item>Delivery kit</item>
+        <item>Crepe Bandages 15cm 4m</item>
+        <item>Crepe Bandages 10cm 4m</item>
+        <item>Dressing Pads 10 x 10cm</item>
+        <item>Dressing Pads 20 x 10cm</item>
+        <item>Guage Rolls3"</item>
+        <item>Guage Rolls6"</item>
+        <item>Guage Cloth in mtr. 6"</item>
+        <item>Adhesive tape</item>
+        <item>Bandaids</item>
+        <item>Sputum Cup</item>
+        <item>Oxygen Mask (Child)</item>
+        <item>Oxygen Mask(Adult)</item>
+        <item>Nasal Cannula-Adult</item>
+        <item>Nasal Cannula-Child</item>
+        <item>Nebulisation Masks Adult</item>
+        <item>Nebulisation Masks child</item>
+        <item>Non Rebreather Mask - Adult</item>
+        <item>Non Rebreather Mask - Child</item>
+        <item>Disposable Face Masks</item>
+        <item>Mucous Sucker</item>
+        <item>Suction Catheter12</item>
+        <item>Suction Catheter16</item>
+        <item>Glucolancets</item>
+        <item>Oropharyngeal Airway 0</item>
+        <item>Oropharyngeal Airway 1</item>
+        <item>Oropharyngeal Airway 2</item>
+        <item>Oropharyngeal Airway 3</item>
+        <item>Oropharyngeal Airway 4</item>
+        <item>Clik Clamp(Cord Clamp)</item>
+        <item>Nasopharyngeal Airway 6.5</item>
+        <item>Nasopharyngeal Airway 7</item>
+        <item>Nasopharyngeal Airway 7.5</item>
+        <item>Nasopharyngeal Airway 8</item>
+        <item>Nasopharyngeal Airway 8.5</item>
+        <item>ECG Electrical Jelly - ALS</item>
+        <item>ECG Electrodes - ALS</item>
+        <item>ECG Roll - ALS</item>
+        <item>Endo Tracheal Tubes 3 - ALS</item>
+        <item>Endo Tracheal Tubes 6 - ALS</item>
+        <item>Endo Tracheal Tubes 7.5 - ALS</item>
+
+
+    </string-array>
+    <string-array name="non_medical_disposable_list">
+        <item>Select Material Description</item>
+        <item>Phenyl 1Ltrs</item>
+        <item>Cleaning Powder</item>
+        <item> Oxygen Cylinder</item>
+        <item> Waste Collection Bag</item>
+        <item> Room Freshners</item>
+        <item> Odonil Kits</item>
+        <item> PlasticBuckets</item>
+        <item> Plastic Mug</item>
+        <item>Cleaning Wipers</item>
+        <item> Bed Sheet(Green)</item>
+        <item> Dettol Hand Wash</item>
+        <item> ALLOUT Liq.Refill</item>
+        <item> Cell Small Size(Pencil Cell)</item>
+        <item> Mobile Phone Charger(Nokia)</item>
+        <item> Mobile Charger(Samsung)</item>
+        <item> Camera Battery Charger</item>
+        <item> Rechargable Batteries(pulse)</item>
+        <item>Rechargable Batteries(camera)</item>
+        <item> Cleaning Cloth (Moping)</item>
+        <item> Cleaning Cloth (Yellow)</item>
+        <item>Colin 500ml</item>
+        <item>Doormats</item>
+        <item> Teflon Tape</item>
+        <item>Cell Gulco Metre</item>
+        <item> Cloth Napkin</item>
+
+        <item> PCR Books</item>
+        <item> Enevelops For PCR</item>
+        <item> PDR Register</item>
+        <item> Complaint Register</item>
+        <item> Report Life Line Register</item>
+        <item> Daily Handing Taking Register</item>
+        <item>Attendance Register</item>
+        <item> Carbon paper</item>
+        <item> White Envelopes 9*4</item>
+        <item> Vehicle check list</item>
+        <item> Pilot Log Book</item>
+        <item> Scribbling Pads Small</item>
+        <item> Fevistick</item>
+        <item> Scale 12" Plastic</item>
+        <item> Stapler</item>
+        <item> Stapler Pins</item>
+        <item> Registers Single Rulled 2Q</item>
+        <item> Blue Pens</item>
+        <item> Flat Files</item>
+        <item> Stamp Pad</item>
+        <item> Inter Facility Form Booklet</item>
+        <item>Leave Form</item>
+        <item>Stock Record Register</item>
+        <item> Pilot Trip Sheet</item>
+    </string-array>
+    <string-array name="vahicle_list">
+        <item>Levels</item>
+        <item>Lights</item>
+        <item> Tyres</item>
+        <item> Body &amp; General Accessories</item>
+        <item> Operation</item>
+        <item> Belt Tension</item>
+        <item> AVLT Device</item>
+        <item> Ambulance keys</item>
+        <item> Fleet Petro card</item>
+        <item> Jack</item>
+        <item> Jack Rod</item>
+        <item> Wheel Spanner</item>
+        <item>Plier Side cutting 6"</item>
+        <item> Spanners D/E 10x11,12x13,16x17,18x19,20x22 21x23 &amp;22x24 (each one)</item>
+        <item> O2 key</item>
+        <item> Spare wheel</item>
+        <item> 12"screwdriver standard squarebar (flat end)</item>
+        <item> 8" screw driver philips head</item>
+        <item> 12" wrench, adjustable</item>
+        <item> Fire axe, butt, 24" handle</item>
+        <item> Wrecking bar</item>
+        <item> 51"crowbar pinch point</item>
+        <item> Bolt cutter with 1",1 1/4" Jaw opening</item>
+        <item> Folding showel pointed blade</item>
+        <item> Tin snips, double action 8"</item>
+        <item> Vise grip plier 10"</item>
+        <item> 5 lb Hammer with 15" handle</item>
+        <item> Leather gloves (set)</item>
+        <item> Rescue Blanket</item>
+        <item> Rope 50</item>
+        <item> Mastic knife</item>
+        <item> Spring loaded centre punch</item>
+        <item> Prunning saw</item>
+        <item> Luminus warning light (with batteries and charging cord)</item>
+        <item> Grease gun</item>
+        <item>  Allen key</item>
+        <item>  Air pressure gauge</item>
+
+    </string-array>
+
+    <string name="enroute_diversion">Patient/ Patient Attendant has been informed that patient will be shifted to the hospital as mentioned in
+the referral slip. Enroute Diversion will not be allowed.</string>
+    <string name="declaration">Examination and medical treatment within our facility’s capacity that minimizes the risk to patient’s health
+has been done. The patient has a stabilized emergency medical condition. There is no need for a Physician
+to accompany the patient, as we expect that the condition of the patient will be stable for the duration of
+the transfer. We do not anticipate any deterioration in his/her condition.</string>
+    <string name="title_activity_navigation_drawer">NavigationDrawerActivity</string>
+    <string name="high_risk_str">The critical nature of the my/patient’s condition has been explained to me by the transferring Physician
+and EMT of EMRI in clear terms and language understood by me. In view of the critical condition, the
+staff of EMRI will not be held responsible in case of DETERIORATION / DEATH ENROUTE.</string>
+
+    <string-array name="select_sex">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>FeMale</item>
+    </string-array>
+    <string-array name="select_socal_staus">
+        <item>Select Socal Status</item>
+        <item>SC</item>
+        <item>ST</item>
+        <item>BC</item>
+        <item>OC</item>
+    </string-array>
+    <string-array name="vehicle_type">
+        <item>Vehicle Type</item>
+        <item>ALS</item>
+        <item>BLS</item>
+        <item>RLS</item>
+        <item>FR</item>
+    </string-array>
+    <string-array name="area">
+        <item>Select Area</item>
+        <item>Urban</item>
+        <item>Rural</item>
+        <item>Tribal</item>
+    </string-array>
+</resources>

@@ -1,0 +1,1129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar_id"
+            layout="@layout/custom_toolbar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="30dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".6"
+                        android:gravity="center|right"
+                        android:text="PCR FORM NO."
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/pcr_form_no"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".4"
+                        android:gravity="center|left"
+                        android:paddingLeft="15dp"
+                        android:text="" />
+                </LinearLayout>
+
+                <!--First Tab Linear-->
+                <LinearLayout
+                    android:id="@+id/first_page"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="1dp"
+                        android:visibility="visible"
+                        card_view:cardCornerRadius="3dp"
+                        card_view:cardElevation="6dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:gravity="start|center"
+                                android:paddingLeft="5dp"
+                                android:text="Patient Details"
+                                android:textColor="@color/colorPrimary"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/editText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="2dp"
+                                android:background="@drawable/rounded_boarder_design"
+                                android:hint="Enter Paitent Name"
+                                android:minHeight="35dp"
+                                android:paddingLeft="5dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="2dp"
+                                android:minHeight="35dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".5"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".15"
+                                        android:gravity="start|center"
+                                        android:paddingLeft="5dp"
+                                        android:text="Age" />
+
+                                    <EditText
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".2"
+                                        android:background="@drawable/rounded_boarder_design"
+                                        android:gravity="center"
+                                        android:hint="yy" />
+
+                                    <EditText
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".2"
+                                        android:background="@drawable/rounded_boarder_design"
+                                        android:gravity="center"
+                                        android:hint="mm" />
+                                </LinearLayout>
+                                <!--sex-->
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight=".5"
+                                    android:background="@drawable/rounded_boarder_design"
+                                    android:minHeight="35dp"
+                                    android:orientation="horizontal">
+
+                                    <Spinner
+                                        android:id="@+id/spinner1"
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"></Spinner>
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:minHeight="30dp"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".4"
+                                    android:gravity="start|center"
+                                    android:paddingLeft="5dp"
+                                    android:text="Sex" />
+
+                                <RadioButton
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".3"
+                                    android:gravity="center"
+                                    android:hint="Male" />
+
+                                <RadioButton
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".3"
+                                    android:gravity="center"
+                                    android:hint="Female" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="2dp"
+                                android:minHeight="35dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".5"
+                                    android:minHeight="35dp"
+                                    android:orientation="horizontal">
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/rounded_boarder_design"
+                                        android:hint="Enter occupation"
+                                        android:minHeight="35dp"
+                                        android:paddingLeft="5dp" />
+                                </LinearLayout>
+                                <!--social status-->
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight=".5"
+                                    android:background="@drawable/rounded_boarder_design"
+                                    android:minHeight="35dp"
+                                    android:orientation="horizontal">
+
+                                    <Spinner
+                                        android:id="@+id/spinner2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"></Spinner>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:minHeight="30dp"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".3"
+                                    android:gravity="start|center"
+                                    android:paddingLeft="1dp"
+                                    android:text="Social Status" />
+
+                                <RadioButton
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".15"
+                                    android:gravity="center"
+                                    android:hint="SC" />
+
+                                <RadioButton
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".15"
+                                    android:gravity="center"
+                                    android:hint="ST" />
+
+                                <RadioButton
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".15"
+                                    android:gravity="center"
+                                    android:hint="BC" />
+
+                                <RadioButton
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".15"
+                                    android:gravity="center"
+                                    android:hint="OC" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:minHeight="35dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".5"
+                                    android:minHeight="35dp"
+                                    android:orientation="horizontal">
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/rounded_boarder_design"
+                                        android:hint="Enter Identification marks"
+                                        android:inputType="textMultiLine"
+                                        android:maxLines="4"
+                                        android:paddingLeft="5dp"
+
+                                        android:textSize="14sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="5dp"
+
+                                    android:layout_weight=".5"
+                                    android:orientation="horizontal">
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/rounded_boarder_design"
+                                        android:hint="Enter Res. Address"
+                                        android:inputType="textMultiLine"
+                                        android:maxLines="4"
+                                        android:paddingLeft="5dp"
+
+                                        android:textSize="14sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:minHeight="35dp"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".32"
+                                    android:background="@drawable/rounded_boarder_design"
+                                    android:gravity="center"
+                                    android:hint="Height(cm)" />
+
+                                <EditText
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".32"
+                                    android:background="@drawable/rounded_boarder_design"
+                                    android:gravity="center"
+                                    android:hint="Weight(Kg)" />
+
+                                <EditText
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".36"
+                                    android:background="@drawable/rounded_boarder_design"
+                                    android:gravity="center"
+                                    android:hint="Blood Group" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="4dp"
+                        android:visibility="visible"
+                        card_view:cardCornerRadius="3dp"
+                        card_view:cardElevation="6dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:minHeight="35dp"
+                                android:orientation="horizontal">
+
+
+                                <EditText
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".5"
+                                    android:background="@drawable/rounded_boarder_design"
+                                    android:gravity="center"
+                                    android:hint="Incident Id/Case Id" />
+
+                                <EditText
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".5"
+                                    android:background="@drawable/rounded_boarder_design"
+                                    android:gravity="center"
+                                    android:hint="Vehicle No" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:minHeight="35dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".5"
+                                    android:background="@drawable/rounded_boarder_design"
+                                    android:orientation="horizontal">
+
+                                    <Spinner
+                                        android:id="@+id/spinner3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"></Spinner>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".5"
+                                    android:background="@drawable/rounded_boarder_design"
+                                    android:orientation="horizontal">
+
+                                    <Spinner
+                                        android:id="@+id/spinner4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"></Spinner>
+                                </LinearLayout>
+
+
+                                <!--<TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".23"
+                                    android:gravity="start|center"
+                                    android:paddingLeft="0dp"
+                                    android:text="Vehicle Type"
+                                    android:textSize="13sp" />
+
+                                <RadioButton
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".19"
+                                    android:gravity="start|center"
+                                    android:hint="ALS" />
+
+                                <RadioButton
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".2"
+                                    android:gravity="start|center"
+                                    android:hint="BLS" />
+
+                                <RadioButton
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".19"
+                                    android:gravity="start|center"
+                                    android:hint="RLS" />
+
+                                <RadioButton
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".19"
+                                    android:gravity="start|center"
+                                    android:hint="FR" />-->
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:minHeight="30dp"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".25"
+                                    android:gravity="start|center"
+                                    android:paddingLeft="5dp"
+                                    android:text="Area"
+                                    android:textSize="13sp" />
+
+                                <RadioButton
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".25"
+                                    android:gravity="start|center"
+                                    android:hint="Urban" />
+
+                                <RadioButton
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".25"
+                                    android:gravity="start|center"
+                                    android:hint="Rural" />
+
+                                <RadioButton
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".25"
+                                    android:gravity="start|center"
+                                    android:hint="Tribal" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:minHeight="35dp"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_weight=".5"
+                                    android:background="@drawable/rounded_boarder_design"
+                                    android:hint="Enter incident location"
+                                    android:paddingLeft="5dp"
+                                    android:textSize="13sp" />
+
+                                <EditText
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginRight="1dp"
+                                    android:layout_weight=".5"
+                                    android:background="@drawable/rounded_boarder_design"
+                                    android:hint="Enter Street"
+                                    android:paddingLeft="5dp"
+                                    android:textSize="13sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="2dp"
+                                android:minHeight="35dp"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_weight=".5"
+                                    android:background="@drawable/rounded_boarder_design"
+                                    android:hint="City: Town/Village"
+                                    android:paddingLeft="5dp"
+                                    android:textSize="13sp" />
+
+                                <EditText
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginRight="1dp"
+                                    android:layout_weight=".5"
+                                    android:background="@drawable/rounded_boarder_design"
+                                    android:hint="Mandal/Taluk"
+                                    android:paddingLeft="5dp"
+                                    android:textSize="13sp" />
+                            </LinearLayout>
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:background="@drawable/rounded_boarder_design"
+                                android:hint="District"
+                                android:paddingLeft="5dp"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="4dp"
+                        card_view:cardCornerRadius="3dp"
+                        card_view:cardElevation="6dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:background="@drawable/rounded_boarder_design"
+                                android:hint="Father/Spouse Name"
+                                android:paddingLeft="5dp"
+                                android:textSize="13sp" />
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_marginTop="2dp"
+                                android:background="@drawable/rounded_boarder_design"
+                                android:hint="Contact No."
+                                android:paddingLeft="5dp"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="4dp"
+                        card_view:cardCornerRadius="3dp"
+                        card_view:cardElevation="6dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:background="@drawable/rounded_boarder_design"
+                                android:hint="Name of the attendent"
+                                android:paddingLeft="5dp"
+                                android:textSize="13sp" />
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_marginTop="2dp"
+                                android:background="@drawable/rounded_boarder_design"
+                                android:hint="Contact No."
+                                android:paddingLeft="5dp"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="4dp"
+                        card_view:cardCornerRadius="3dp"
+                        card_view:cardElevation="6dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:background="@drawable/rounded_boarder_design"
+                                android:hint="Relationship"
+                                android:paddingLeft="5dp"
+                                android:textSize="13sp" />
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_marginTop="2dp"
+                                android:background="@drawable/rounded_boarder_design"
+                                android:hint="Aid at scene before vehicle arrival "
+                                android:paddingLeft="5dp"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="4dp"
+                        card_view:cardCornerRadius="3dp"
+                        card_view:cardElevation="6dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:gravity="start|center"
+                                android:paddingLeft="5dp"
+                                android:text="Chief Complaint:"
+                                android:textSize="15dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:minHeight="30dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".4"
+                                    android:gravity="start|center"
+                                    android:paddingLeft="5dp"
+                                    android:text="Primary "
+                                    android:textSize="13sp" />
+
+                                <EditText
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".6"
+                                    android:background="@drawable/rounded_boarder_design"
+                                    android:gravity="center"
+                                    android:hint="Aid at scene before vehicle arrival "
+                                    android:paddingLeft="5dp"
+                                    android:textSize="13sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="2dp"
+                                android:minHeight="30dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".4"
+                                    android:gravity="start|center"
+                                    android:paddingLeft="5dp"
+                                    android:text="Duration"
+                                    android:textSize="13sp" />
+
+                                <EditText
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".6"
+                                    android:background="@drawable/rounded_boarder_design"
+                                    android:gravity="center"
+                                    android:hint="hh:mm"
+                                    android:minHeight="30dp"
+                                    android:paddingLeft="5dp"
+                                    android:textSize="13sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:minHeight="30dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".4"
+                                    android:gravity="start|center"
+                                    android:paddingLeft="5dp"
+                                    android:text="Associate "
+                                    android:textSize="13sp" />
+
+                                <EditText
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".6"
+                                    android:background="@drawable/rounded_boarder_design"
+                                    android:gravity="center"
+                                    android:hint="Aid at scene before vehicle arrival "
+                                    android:paddingLeft="5dp"
+                                    android:textSize="13sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="2dp"
+                                android:minHeight="30dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".4"
+                                    android:gravity="start|center"
+                                    android:paddingLeft="5dp"
+                                    android:text="Duration"
+                                    android:textSize="13sp" />
+
+                                <EditText
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".6"
+                                    android:background="@drawable/rounded_boarder_design"
+                                    android:gravity="center"
+                                    android:hint="hh:mm"
+                                    android:minHeight="30dp"
+                                    android:paddingLeft="5dp"
+                                    android:textSize="13sp" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+                <!--Second Tab Linear-->
+                <LinearLayout
+                    android:id="@+id/second_page"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/rounded_boarder_design"
+                        android:minHeight="30dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/past_illness"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight=".5"
+                            android:background="@color/blue"
+                            android:gravity="center"
+                            android:paddingLeft="20dp"
+
+                            android:text="Select Past Illness"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/history_of_medication"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight=".5"
+                            android:background="@color/blue"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:text="Select History of Medication"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/rounded_boarder_design"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center|left"
+                                android:paddingLeft="10dp"
+                                android:text="Type of case:Accident(Trauma/Medicen)"
+                                android:textColor="@color/colorPrimary"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="1dp"
+                                android:minHeight="40dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".4"
+                                    android:gravity="center|start"
+                                    android:paddingLeft="5dp"
+                                    android:text="Type of emergency :"
+                                    android:textSize="13sp" />
+
+                                <EditText
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight=".6"
+                                    android:gravity="center|start"
+                                    android:hint="Type of emergency:"
+                                    android:paddingLeft="5dp"
+                                    android:textSize="13sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="1dp"
+                                android:minHeight="40dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".4"
+                                    android:gravity="center|start"
+                                    android:paddingLeft="5dp"
+                                    android:text="Case of emergency :"
+                                    android:textSize="13sp" />
+
+                                <EditText
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight=".6"
+                                    android:gravity="center|start"
+                                    android:hint="case of emergency:"
+                                    android:paddingLeft="5dp"
+                                    android:textSize="13sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="1dp"
+                                android:minHeight="40dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".4"
+                                    android:gravity="center|start"
+                                    android:paddingLeft="5dp"
+                                    android:text="Antomical area of emergency :"
+                                    android:textSize="13sp" />
+
+                                <EditText
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight=".6"
+                                    android:gravity="center|start"
+                                    android:hint="Antomical area of emergency:"
+                                    android:paddingLeft="5dp"
+                                    android:textSize="13sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="1dp"
+                                android:minHeight="40dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".4"
+                                    android:gravity="center|start"
+                                    android:paddingLeft="5dp"
+                                    android:text="Mechanism of injury:"
+                                    android:textSize="13sp" />
+
+                                <EditText
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight=".6"
+                                    android:gravity="center|start"
+                                    android:hint="Antomical area of emergency:"
+                                    android:paddingLeft="5dp"
+                                    android:textSize="13sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="1dp"
+                                android:minHeight="40dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".4"
+                                    android:gravity="center|start"
+                                    android:paddingLeft="5dp"
+                                    android:text="Presenting Symptoms"
+                                    android:textSize="13sp" />
+
+                                <EditText
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight=".6"
+                                    android:gravity="center|start"
+                                    android:hint="Antomical area of emergency:"
+                                    android:paddingLeft="5dp"
+                                    android:textSize="13sp" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!--Third Tab Linear-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@color/colorPrimary"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight=".25"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="Vital Signs"
+                                android:textColor="@color/white"
+                                android:textSize="13sp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight=".25"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="Atscene"
+                                android:textColor="@color/white"
+                                android:textSize="13sp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight=".25"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text=""
+                                android:textColor="@color/white"
+                                android:textSize="13sp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight=".25"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="PCR FORM NO."
+                                android:textColor="@color/white"
+                                android:textSize="13sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_previous"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            android:layout_weight=".5"
+            android:background="@color/gray"
+            android:gravity="center"
+            android:text="Previous"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv_next"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_weight=".5"
+            android:background="@color/gray"
+            android:gravity="center"
+            android:text="Next"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

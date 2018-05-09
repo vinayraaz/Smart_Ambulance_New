@@ -1,0 +1,1308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar_id"
+            layout="@layout/custom_toolbar" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center"
+            android:minHeight="35dp"
+            android:paddingRight="10dp"
+            android:text="Date: 28/03/2018"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="14sp" />
+
+        <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <CheckBox
+                        android:id="@+id/checkBox1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5"
+                        android:gravity="left|center"
+                        android:text="REFERRAL" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5"
+                        android:gravity="right|center"
+                        android:text="RE-REFERRAL" />
+
+
+                </LinearLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:visibility="visible"
+                    card_view:cardCornerRadius="3dp"
+                    card_view:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/patient_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+
+                            android:background="@drawable/edittx_design"
+                            android:hint="Patient Name"
+                            android:inputType="text"
+                            android:paddingLeft="10dp" />
+
+                        <EditText
+                            android:id="@+id/patient_age"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/edittx_design"
+                            android:hint="Patient age"
+                            android:inputType="number"
+                            android:paddingLeft="10dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:orientation="horizontal"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp">
+
+                            <CheckBox
+                                android:id="@+id/male_check"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".5"
+                                android:gravity="left|center"
+                                android:text="Male" />
+
+                            <CheckBox
+                                android:id="@+id/femail_check"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".5"
+                                android:gravity="right|center"
+                                android:paddingRight="15dp"
+                                android:text="Female" />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+                <!--A-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:gravity="left|center"
+                    android:text=" Vitals:"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:visibility="visible"
+                    card_view:cardCornerRadius="3dp"
+                    card_view:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:orientation="horizontal">
+
+                            <EditText
+
+                                android:id="@+id/blood_pressure"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="2dp"
+                                android:layout_weight=".5"
+                                android:background="@drawable/bg_edittext_normal"
+                                android:hint="Enter Blood Pressure"
+                                android:inputType="number"
+                                android:textSize="14sp" />
+
+                            <EditText
+                                android:id="@+id/pulse_rate"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="2dp"
+                                android:layout_weight=".5"
+                                android:background="@drawable/bg_edittext_normal"
+                                android:gravity="center"
+                                android:hint="Enter Pulse Rate"
+                                android:inputType="number"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <EditText
+
+                                android:id="@+id/consciousness"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="2dp"
+                                android:layout_weight=".5"
+                                android:background="@drawable/bg_edittext_normal"
+                                android:hint="Level of Consciousness"
+                                android:inputType="number"
+                                android:textSize="14sp" />
+
+                            <EditText
+                                android:id="@+id/pupils"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="2dp"
+                                android:layout_weight=".5"
+                                android:background="@drawable/bg_edittext_normal"
+                                android:gravity="center"
+                                android:hint="Enter Pupils"
+                                android:inputType="number"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/provisional_digs"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="2dp"
+                            android:background="@drawable/bg_edittext_normal"
+                            android:gravity="center"
+                            android:hint="Enter Provisional Diagnosis "
+                            android:inputType="text"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/reason_referral"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:background="@drawable/bg_edittext_normal"
+                            android:gravity="center"
+                            android:hint="Enter Reason for referral"
+                            android:inputType="textMultiLine"
+                            android:maxLines="5"
+                            android:minHeight="40dp"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".6"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="2dp"
+                                    android:gravity="left|center"
+                                    android:text="Treatment given (if yes pls. specify..)"
+                                    android:textColor="@color/cardview_dark_background" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".4"
+                                android:orientation="horizontal">
+
+                                <RadioGroup
+                                    android:id="@+id/radioGroup1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:id="@+id/emtbutton"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:checked="true"
+                                        android:paddingRight="15dp"
+                                        android:text="Yes" />
+
+                                    <RadioButton
+                                        android:id="@+id/pilotbutton"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+
+                                        android:text="No" />
+                                </RadioGroup>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#fff"
+                            android:minHeight="30dp"
+                            android:visibility="gone"
+                            android:orientation="horizontal">
+
+
+                            <!-- <RadioButton
+                                 android:id="@+id/emtbutton"
+                                 android:layout_width="0dp"
+                                 android:layout_height="match_parent"
+                                 android:layout_weight=".5"
+                                 android:checked="false"
+                                 android:paddingLeft="15sp"
+                                 android:text="Yes"
+                                 android:textSize="12dp" />
+
+                             <RadioButton
+                                 android:id="@+id/pilotbutton"
+                                 android:layout_width="0dp"
+                                 android:layout_height="match_parent"
+                                 android:layout_weight=".5"
+                                 android:checked="true"
+                                 android:gravity="center"
+                                 android:paddingRight="15dp"
+                                 android:text="No"
+                                 android:textSize="12dp" />-->
+
+
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/specify_tx"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:background="@drawable/bg_edittext_normal"
+                            android:gravity="center"
+                            android:hint="if yes please specify"
+                            android:inputType="textMultiLine"
+                            android:maxLines="5"
+                            android:minHeight="40dp"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <!--B-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:gravity="left|center"
+                    android:text="Reason for Using 108:"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:visibility="visible"
+                    card_view:cardCornerRadius="3dp"
+                    card_view:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#fff"
+                            android:minHeight="30dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="2dp"
+                                android:layout_weight=".6"
+                                android:gravity="start|center"
+                                android:paddingLeft="5dp"
+                                android:text="Medical Officer Availability"
+                                android:textColor="@color/cardview_dark_background" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".4"
+                                android:orientation="horizontal">
+
+                                <RadioGroup
+                                    android:id="@+id/rd"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:id="@+id/res_rd1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:checked="true"
+                                        android:paddingRight="15dp"
+                                        android:text="Yes" />
+
+                                    <RadioButton
+                                        android:id="@+id/res_rd2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+
+                                        android:text="No" />
+                                </RadioGroup>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#fff"
+                            android:minHeight="30dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="2dp"
+                                android:layout_weight=".6"
+                                android:gravity="start|center"
+                                android:paddingLeft="5dp"
+                                android:text="Concerned Specialist "
+                                android:textColor="@color/cardview_dark_background" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".4"
+                                android:orientation="horizontal">
+
+                                <RadioGroup
+                                    android:id="@+id/radioGroup3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:id="@+id/res_specialist1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+
+                                        android:paddingRight="15dp"
+                                        android:text="Yes" />
+
+                                    <RadioButton
+                                        android:id="@+id/res_specialist2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:checked="true"
+                                        android:text="No" />
+                                </RadioGroup>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#fff"
+                            android:minHeight="30dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="2dp"
+                                android:layout_weight=".6"
+                                android:gravity="start|center"
+                                android:paddingLeft="5dp"
+                                android:text="Facility available"
+                                android:textColor="@color/cardview_dark_background" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".4"
+                                android:orientation="horizontal">
+
+                                <RadioGroup
+                                    android:id="@+id/radioGroup4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:id="@+id/res_facility1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+
+                                        android:paddingRight="15dp"
+                                        android:text="Yes" />
+
+                                    <RadioButton
+                                        android:id="@+id/res_facility2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:checked="true"
+                                        android:text="No" />
+                                </RadioGroup>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#fff"
+                            android:minHeight="30dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="2dp"
+                                android:layout_weight=".6"
+                                android:gravity="start|center"
+                                android:paddingLeft="5dp"
+                                android:text="Ambulance Facility"
+                                android:textColor="@color/cardview_dark_background" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".4"
+                                android:orientation="horizontal">
+
+                                <RadioGroup
+                                    android:id="@+id/radioGroup5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:id="@+id/res_ambulance1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+
+                                        android:paddingRight="15dp"
+                                        android:text="Yes" />
+
+                                    <RadioButton
+                                        android:id="@+id/res_ambulance2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:checked="true"
+                                        android:text="No" />
+                                </RadioGroup>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/bg_edittext_normal"
+                            android:gravity="start|center"
+                            android:hint="If yes (reason)"
+                            android:inputType="textMultiLine"
+                            android:maxLines="3"
+                            android:minHeight="40dp"
+                            android:paddingLeft="5dp"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <!--C-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:gravity="left|center"
+                    android:text="108’s IFT Process:"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:visibility="visible"
+                    card_view:cardCornerRadius="3dp"
+                    card_view:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#fff"
+                            android:minHeight="45dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="2dp"
+                                android:layout_weight=".6"
+                                android:gravity="start|center"
+                                android:paddingLeft="5dp"
+                                android:text="Is Nursing staff accompanying the patient"
+                                android:textColor="@color/cardview_dark_background" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".4"
+                                android:orientation="horizontal">
+
+                                <RadioGroup
+                                    android:id="@+id/radioGroup6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:id="@+id/nursing_rd1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:checked="true"
+                                        android:paddingRight="15dp"
+                                        android:text="Yes" />
+
+                                    <RadioButton
+                                        android:id="@+id/nursing_rd2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:text="No" />
+                                </RadioGroup>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/bg_edittext_normal"
+                            android:gravity="start|center"
+                            android:hint="if no (pls. specify reason) "
+                            android:inputType="textMultiLine"
+                            android:maxLines="3"
+                            android:minHeight="40dp"
+                            android:paddingLeft="5dp"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#fff"
+                            android:minHeight="45dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="2dp"
+                                android:layout_weight=".6"
+                                android:gravity="start|center"
+                                android:paddingLeft="5dp"
+                                android:text="Destination Hospital informed of the transfer"
+                                android:textColor="@color/cardview_dark_background" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".4"
+                                android:orientation="horizontal">
+
+                                <RadioGroup
+                                    android:id="@+id/radioGroup7"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:id="@+id/destination_rd1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:checked="true"
+                                        android:paddingRight="15dp"
+                                        android:text="Yes" />
+
+                                    <RadioButton
+                                        android:id="@+id/destination_rd2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:text="No" />
+                                </RadioGroup>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/bg_edittext_normal"
+                            android:gravity="start|center"
+                            android:hint="if no (pls. specify reason) "
+                            android:inputType="textMultiLine"
+                            android:maxLines="3"
+                            android:minHeight="40dp"
+                            android:paddingLeft="5dp"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#fff"
+                            android:minHeight="45dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="2dp"
+                                android:layout_weight=".6"
+                                android:gravity="start|center"
+                                android:paddingLeft="5dp"
+                                android:text="Destination Hospital accepted the transfer"
+                                android:textColor="@color/cardview_dark_background" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".4"
+                                android:orientation="horizontal">
+
+                                <RadioGroup
+                                    android:id="@+id/radioGroup8"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:id="@+id/accepted_rd1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:checked="true"
+                                        android:paddingRight="15dp"
+                                        android:text="Yes" />
+
+                                    <RadioButton
+                                        android:id="@+id/accepted_rd2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:text="No" />
+                                </RadioGroup>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#fff"
+                            android:minHeight="45dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="2dp"
+                                android:layout_weight=".6"
+                                android:gravity="start|center"
+                                android:paddingLeft="5dp"
+                                android:text="Referral Letter attached"
+                                android:textColor="@color/cardview_dark_background" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".4"
+                                android:orientation="horizontal">
+
+                                <RadioGroup
+                                    android:id="@+id/radioGroup9"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:id="@+id/referral_rd1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:checked="true"
+                                        android:paddingRight="15dp"
+                                        android:text="Yes" />
+
+                                    <RadioButton
+                                        android:id="@+id/referral_rd2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:text="No" />
+                                </RadioGroup>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#fff"
+                            android:minHeight="45dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="2dp"
+                                android:layout_weight=".6"
+                                android:gravity="start|center"
+                                android:paddingLeft="5dp"
+                                android:text="Doctor on shift at 108 ERC informed"
+                                android:textColor="@color/cardview_dark_background" />
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".4"
+                                android:orientation="horizontal">
+
+                                <RadioGroup
+                                    android:id="@+id/radioGroup10"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:id="@+id/ercinformed_rd1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:checked="true"
+                                        android:paddingRight="15dp"
+                                        android:text="Yes" />
+
+                                    <RadioButton
+                                        android:id="@+id/ercinformed_rd2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:text="No" />
+                                </RadioGroup>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+                <!--E-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:gravity="left|center"
+                    android:text="EMT records"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:visibility="visible"
+                    card_view:cardCornerRadius="3dp"
+                    card_view:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".3"
+                                android:gravity="center|start"
+                                android:text="Incident ID" />
+
+                            <EditText
+                                android:id="@+id/incident_id"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".4"
+                                android:gravity="center|start"
+                                android:hint="Incident Id"
+                                android:inputType="number" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".3"
+                                android:gravity="center|start"
+                                android:text="05/04/18" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+
+                            <EditText
+
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="2dp"
+                                android:layout_weight=".5"
+                                android:background="@drawable/bg_edittext_normal"
+                                android:hint="Enter Blood Pressure"
+                                android:inputType="number"
+                                android:textSize="14sp" />
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="2dp"
+                                android:layout_weight=".5"
+                                android:background="@drawable/bg_edittext_normal"
+                                android:gravity="center"
+                                android:hint="Enter Pulse Rate"
+                                android:inputType="number"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+
+                            <EditText
+
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="2dp"
+                                android:layout_weight=".5"
+                                android:background="@drawable/bg_edittext_normal"
+                                android:hint="Ente Respiratory Rate"
+                                android:inputType="number"
+                                android:textSize="14sp" />
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="2dp"
+                                android:layout_weight=".5"
+                                android:background="@drawable/bg_edittext_normal"
+                                android:gravity="center"
+                                android:hint="Enter SPO2"
+                                android:inputType="number"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+
+                            <EditText
+
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="2dp"
+                                android:layout_weight=".5"
+                                android:background="@drawable/bg_edittext_normal"
+                                android:hint="Level of Consciousness"
+                                android:inputType="number"
+                                android:textSize="14sp" />
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="2dp"
+                                android:layout_weight=".5"
+                                android:background="@drawable/bg_edittext_normal"
+                                android:gravity="center"
+                                android:hint="Enter Pupils"
+                                android:inputType="number"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+
+                            <EditText
+
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="2dp"
+                                android:layout_weight=".7"
+                                android:background="@drawable/bg_edittext_normal"
+                                android:hint="Enter EMT Name"
+                                android:inputType="text"
+                                android:textSize="14sp" />
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="2dp"
+                                android:layout_weight=".5"
+                                android:background="@drawable/bg_edittext_normal"
+                                android:gravity="center"
+                                android:hint="Enter ID No"
+                                android:inputType="number"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@color/colorAccent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".9"
+                            android:gravity="left|center"
+                            android:paddingLeft="10dp"
+                            android:text="Enroute Diversion"
+                            android:textColor="@color/white" />
+
+                        <ImageView
+                            android:id="@+id/down_image_icon1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".1"
+                            android:background="@drawable/down_icon"
+                            android:gravity="center" />
+
+                        <ImageView
+                            android:id="@+id/up_image_icon1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".1"
+                            android:background="@drawable/up_icon"
+                            android:gravity="center"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/enroute_diversion_linear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:text="@string/enroute_diversion" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@color/colorAccent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".9"
+                            android:gravity="left|center"
+                            android:paddingLeft="10dp"
+                            android:text="Declaration"
+                            android:textColor="@color/white" />
+
+                        <ImageView
+                            android:id="@+id/down_image_icon2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".1"
+                            android:background="@drawable/down_icon"
+                            android:gravity="center" />
+
+                        <ImageView
+                            android:id="@+id/up_image_icon2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".1"
+                            android:background="@drawable/up_icon"
+                            android:gravity="center"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/declaration_linear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:text="@string/declaration" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!--Signature-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@color/colorAccent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".9"
+                            android:gravity="left|center"
+                            android:paddingLeft="10dp"
+                            android:text="Referring Physician/Authorized Person "
+                            android:textColor="@color/white" />
+
+                        <ImageView
+                            android:id="@+id/down_image_icon3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".1"
+                            android:background="@drawable/down_icon"
+                            android:gravity="center" />
+
+                        <ImageView
+                            android:id="@+id/up_image_icon3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".1"
+                            android:background="@drawable/up_icon"
+                            android:gravity="center"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/referring_linear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <EditText
+                            android:id="@+id/referring_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:background="@drawable/edittx_design"
+                            android:hint="Name"
+                            android:inputType="text"
+                            android:paddingLeft="10dp" />
+
+                        <EditText
+                            android:id="@+id/seal_hospital"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/edittx_design"
+                            android:hint="Official Seal of the Hospital"
+                            android:inputType="text"
+                            android:paddingLeft="10dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@color/colorAccent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".9"
+                            android:gravity="left|center"
+                            android:paddingLeft="10dp"
+                            android:text="High risk consent"
+                            android:textColor="@color/white" />
+
+                        <ImageView
+                            android:id="@+id/down_image_icon4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".1"
+                            android:background="@drawable/down_icon"
+                            android:gravity="center" />
+
+                        <ImageView
+                            android:id="@+id/up_image_icon4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".1"
+                            android:background="@drawable/up_icon"
+                            android:gravity="center"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/high_risk_linear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:text="@string/high_risk_str" />
+
+                        <EditText
+                            android:id="@+id/high_rish_patient_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/edittx_design"
+                            android:hint=" Patient or Patient’s Attendant"
+                            android:inputType="text"
+                            android:paddingLeft="10dp"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!--End-->
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+    <!--Button-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>
